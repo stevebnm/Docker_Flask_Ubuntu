@@ -18,7 +18,7 @@ config = {
     'database': 'Employee'
 }
 
-connection = mysql.connector.connect(**config)
+connection = mysql.connector.connect(user='testing', host='mysql', port='3306', password='testing', database='test')
 cursor = connection.cursor()
 
 # Home Method
